@@ -1,0 +1,21 @@
+$ cat keys.txt.example
+mailaccount@example.org;aaaabbbbccccaaaa
+GitHub;aabbccaabbccaaaaaa
+$ cat keys.txt.example | perl tokprint
+
+
+mailaccount@example.org        743706    
+GitHub                         408363    
+
+
+$ gpg -ac keys.txt.example 
+
+$ gpg -d keys.txt.example.asc | perl tokprint                                                                                                                
+gpg: CAST5 encrypted data
+Enter passphrase: 
+
+gpg: encrypted with 1 passphrase
+gpg: WARNING: message was not integrity protected
+mailaccount@example.org        664872    
+GitHub                         099649    
+$ 
