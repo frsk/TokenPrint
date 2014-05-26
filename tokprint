@@ -2,7 +2,6 @@
 
 use Authen::OATH;
 use Convert::Base32;
-use Data::Dumper;
 
 my $oath = Authen::OATH->new();
 print "\n\n";
