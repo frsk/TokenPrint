@@ -1,3 +1,5 @@
+Required packages: libauthen-oath-perl, libconvert-base32-perl
+
 $ cat keys.txt.example
 mailaccount@example.org;aaaabbbbccccaaaa
 GitHub;aabbccaabbccaaaaaa
