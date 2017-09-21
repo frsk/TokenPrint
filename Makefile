@@ -1,2 +1,2 @@
 all:
-		gpg -d keys.txt.asc | ./tokprint
+		gpg2 -d keys.txt.asc | ./tokprint
